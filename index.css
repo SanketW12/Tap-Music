@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding : 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+
+#app{
+    height: 100vh;
+  display: flex;
+flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+header h1{
+  color: #292929;
+  font-size: 40px;
+  margin: 50px 0px 10px 0px;
+  text-align: center;
+}
+
+header p{
+  font-size: 20px;
+    text-align: center;
+}
+
+.pads{
+  width: 100%;
+display: flex;
+
+
+}
+
+.pads > div{
+  height: 100px;
+  width: 100px;
+  flex-grow: 1;
+
+}
+
+
+.pad1{
+  background-color: #60d394;
+}
+
+.pad2{
+  background-color: #d36060;
+}
+
+.pad3{
+  background-color: #c060d3;
+}
+
+.pad4{
+  background-color: #6860d3;
+}
+
+.pad5{
+  background-color: #d3d160;
+}
+
+.pad6{
+  background-color: #60b2d3;
+}
+
+@keyframes jump {
+  0%{
+    left:20%;
+    bottom:0%;
+  }
+  50%{
+    left: 50%;
+    bottom:50%;}
+
+    100%{
+      left: 80%;
+      bottom: 0%;
+    }
+  }
+
+.ball > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+z-index: -1;
+}
+
+
+}
